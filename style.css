@@ -1,0 +1,270 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.logo-top {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-top {
+  width: 90%;
+  margin-top: 20px;
+  max-width: 900px;
+}
+.cards {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+.order {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.order h1 {
+  width: 100%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+.order img {
+  width: 100%;
+}
+.img-bottom {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.price {
+  width: 100%;
+}
+.price-txt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid #dee2e6 !important;
+}
+.price-txt p {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.secure-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.secure-card h1 {
+  width: 100%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.secure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+.inputs-secure {
+  width: 100%;
+}
+.secure {
+  background: white;
+}
+.p1 {
+  display: flex;
+  width: 90%;
+  gap: 6px;
+  font-size: 18px;
+  align-self: baseline;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+#address,
+#state,
+#country {
+  margin-top: 10px;
+  width: 90%;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 3px;
+  border: 1px solid #dee2e6;
+  transition: border-color 0.11s ease-in-out;
+  border-radius: 5px;
+}
+
+#address:focus,
+#state:focus,
+#country:focus {
+  border-color: blue; /* Change the border color when the input is focused */
+  outline: none;
+}
+.select_option {
+  display: flex;
+}
+.input-c-s {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 50px;
+}
+#country {
+  width: 45%;
+}
+#state {
+  width: 45%;
+}
+.input-check {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+  padding-left: 25px;
+  width: 100%;
+}
+#checkbox {
+  width: 20px;
+  height: 20px;
+  font-size: 100px;
+}
+.input-check label {
+  font-size: 18px;
+}
+.img-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-mid img {
+  width: 100%;
+  max-width: 800px;
+}
+.guarante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.guarante img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.guarante p {
+  width: 95%;
+  max-width: 500px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  box-shadow: 0.125rem 0.125rem 0.5rem rgb(0 0 0/18%);
+}
+.terms h1 {
+  font-size: 15px;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.terms ul {
+  width: 90%;
+  margin: auto;
+  max-width: 900px;
+}
+.terms ul li {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.terms p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.577);
+  margin-bottom: 20px;
+}
+.btn-secure {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #009d43 !important;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .order {
+    width: 100%;
+  }
+  .secure-card {
+    width: 100%;
+  }
+  .secure {
+    width: 95%;
+  }
+  .input-c-s {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 0;
+  }
+  #country {
+    width: 100%;
+  }
+  #state {
+    width: 100%;
+  }
+}
